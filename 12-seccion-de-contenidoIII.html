@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de contenido II</title>
+</head>
+
+<!-- 
+ section: Es un contenedor genérico que agrupa contenidos que está relacionado. Cuando creamos bloques cuyos contenido es parte de un bloque total usarenis sectuion.
+ 
+ article: Es un contenedor que reoresenta contenido independientemente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendría sentido por si mismo.
+
+ aside: Se utiliza para representar contenido relacionado pero que no forma del contenido principal
+
+ Anidamiento:
+    Un section pueden contener articles , por ejemplo, si tenemos varios artículos que hablan sobre etiquetas HTML, deben ir dentro de un section, ya que es contenido relacionado entre sí, y los article serían contenido independientemente porque podríamos leer uno sin haber leido el resto, y seguiríatniendo sentido.
+    El article es definido como un componente de la página de contenido independiente, esto implica que esta etiqueta pueda tener un header y un footer propios.
+
+    También existe el caso en el que un article contenga varias secciones, el artículo independiente podría ser navegadores y este contener dentro secciones como navegadores y este contener dentro secciones como navegadores más utilizados en 2020
+-->
+
+
+<body>
+    <header>
+        <h1>NOTICIAS NACIONALES</h1>
+    </header>
+        <!-- Esto está mal. Mirandolo en el https://validator.w3.org/ nos lo va a marcar
+        <section>
+            <h2>Noticias del Día</h2>
+            <article>Noticia 1</article>
+            <article>Noticia 2</article>
+            <article>Noticia 3</article>
+        </section>
+        -->
+        
+    <main>
+        <!-- 
+        <section>
+            <h2>Section como contenedor</h2>
+            <section>
+            <h3>Noticias del Día</h3>
+            <article>
+                <header>
+                    <h4>Noticia 1</h4>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt, quisquam minima totam nemo, animi laborum temporibus omnis vitae eveniet cupiditate? Maxime fugit fuga eius accusamus laborum eligendi cumque sint.</p>
+                <footer>La noticia 1 ocurrió en Madrid</footer>
+            </article>
+                
+                <article>
+                    <h4>Noticia 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt, quisquam minima totam nemo, animi laborum temporibus omnis vitae eveniet cupiditate? Maxime fugit fuga eius accusamus laborum eligendi cumque sint.</p>
+                </article>
+                
+                <article>
+                    <h4>Noticia 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt, quisquam minima totam nemo, animi laborum temporibus omnis vitae eveniet cupiditate? Maxime fugit fuga eius accusamus laborum eligendi cumque sint.</p>
+                </article>
+            </section>
+        </section>
+        -->
+    
+        <article>
+            <h2>Navegadores más utilizados en 2020</h2>
+            <section>
+                <header>
+                    <h3>Chrome</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis tempora, facilis sit ipsa porro assumenda distinctio dicta, excepturi odio numquam at. Eius laudantium culpa labore esse. Numquam ea atque aut.</p>
+                <footer>Creado por Google</footer>
+            </section>
+            <section>
+                <h3>Firefox</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ex tenetur quia ullam. Commodi nesciunt aperiam, nobis odit unde ipsam aut eum deserunt obcaecati omnis ipsa mollitia corporis ratione amet?</p>
+            </section>
+        </article>
+    </main>
+        
+    <footer>4-11-2020</footer>
+        
+</body>
+</html>
